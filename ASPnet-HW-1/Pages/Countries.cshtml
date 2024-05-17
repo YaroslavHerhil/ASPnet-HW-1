@@ -1,0 +1,13 @@
+﻿@page
+@model ASPnet_HW_1.Pages.CountriesModel
+@{
+}
+
+<h1>COUNTRIES</h1>
+<h3>Exhaustive list of all known countries on earth:</h3>
+
+@foreach(string country in Model.Countries)
+{
+    <hr />
+    <p>@country</p>
+}

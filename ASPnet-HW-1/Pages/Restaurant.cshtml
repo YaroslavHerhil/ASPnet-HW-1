@@ -1,0 +1,25 @@
+﻿@page
+@model ASPnet_HW_1.Pages.RestaurantModel
+@{
+}
+
+
+<h1>RESTAURANT LE FOOD</h1>
+
+<p>
+    Welcome to zhe reustaurantie le food, where we serve le food. Please enjoy le food.
+</p>
+
+
+<h3>We offer a wide selection of food here</h3>
+@for(int i = 0; i < 5; i++)
+{
+    <hr />
+    <p>Le food @(i+1)</p>
+    @if(i == 3)
+    {
+        <hr />
+        <p>Chef Poe's special "pork" chop</p>
+    }
+
+}

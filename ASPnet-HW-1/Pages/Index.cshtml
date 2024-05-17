@@ -1,0 +1,9 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    char letter = (char)(new Random().Next(65,91));
+}
+
+<h3>@letter</h3>
+<h2>@DateTime.Now</h2>
